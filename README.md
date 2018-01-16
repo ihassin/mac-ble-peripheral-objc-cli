@@ -114,10 +114,6 @@ NSLog(@"didReceiveWriteRequest: %@ %@. Ignoring!", request.central, request.char
 
 In this POC, I do some basic checking and handle the request, but most of the code is to translate NSData to NSString and vice versa.
 
-# See it run
-
-![image-title-here](/assets/peripheral.png){:class="img-responsive"}
-
 # Access the example
 
 Please feel free to use, fork and improve this snippet, posted on [github](https://github.com/ihassin/mac-ble-peripheral-objc-cli).
