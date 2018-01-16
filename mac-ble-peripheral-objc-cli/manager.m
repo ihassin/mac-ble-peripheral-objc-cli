@@ -78,15 +78,15 @@
     CBMutableService *service;
     service = [[CBMutableService alloc] initWithType:_myUUID primary:YES];
     
-    CBMutableCharacteristic *myCharacteristic = [[CBMutableCharacteristic alloc] initWithType:_charUUID properties:CBCharacteristicPropertyRead|CBCharacteristicPropertyIndicate|CBCharacteristicPropertyWriteWithoutResponse value:nil permissions:CBAttributePermissionsReadable|CBAttributePermissionsWriteable];
-    
+    CBMutableCharacteristic *myCharacteristic = [[CBMutableCharacteristic alloc]
+                                                 initWithType:_charUUID properties:CBCharacteristicPropertyRead|CBCharacteristicPropertyIndicate|CBCharacteristicPropertyWriteWithoutResponse value:nil permissions:CBAttributePermissionsReadable|CBAttributePermissionsWriteable];
     service.characteristics = @[myCharacteristic];
     [_peripheralManager addService:service];
 
     [_peripheralManager startAdvertising:@{
-                                   CBAdvertisementDataLocalNameKey: @"ITAMAR-MAC-BOOK-PRO",
-                                   CBAdvertisementDataServiceUUIDsKey: @[_myUUID]
-                                   }];
+                       CBAdvertisementDataLocalNameKey: @"ITAMAR-MAC-BOOK-PRO",
+                       CBAdvertisementDataServiceUUIDsKey: @[_myUUID]
+                       }];
 }
 
 - (void)peripheralManagerDidStartAdvertising:(CBPeripheralManager *)peripheral error:(NSError *)error

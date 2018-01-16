@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6A53C802200BA525005FD0D2 /* manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A53C801200BA525005FD0D2 /* manager.m */; };
 		6A53C804200BB307005FD0D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A53C803200BB307005FD0D2 /* main.m */; };
+		6ABC5ABC200D894A0009D82E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6ABC5ABB200D894A0009D82E /* README.md */; };
 		6ACE3A6F2002DE9D007B850C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACE3A6E2002DE9D007B850C /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		6A53C800200BA442005FD0D2 /* manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = manager.h; sourceTree = "<group>"; };
 		6A53C801200BA525005FD0D2 /* manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = manager.m; sourceTree = "<group>"; };
 		6A53C803200BB307005FD0D2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "mac-ble-peripheral-objc-cli/main.m"; sourceTree = "<group>"; };
+		6ABC5ABB200D894A0009D82E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6ACE3A6E2002DE9D007B850C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		6ACE3A702002E3D9007B850C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		AFE86A7C181EB226001E1827 /* mac-ble-peripheral-objc-cli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mac-ble-peripheral-objc-cli.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +56,7 @@
 		AFE86A73181EB226001E1827 = {
 			isa = PBXGroup;
 			children = (
+				6ABC5ABB200D894A0009D82E /* README.md */,
 				6A53C803200BB307005FD0D2 /* main.m */,
 				AFE86A85181EB226001E1827 /* mac-ble-peripheral-objc-cli */,
 				AFE86A7E181EB226001E1827 /* Frameworks */,
@@ -165,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ABC5ABC200D894A0009D82E /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
