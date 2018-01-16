@@ -30,7 +30,7 @@ Without this loop, nothing will work.
 
 ## Start up Mac OS X BLE service
 
-By instantiating CBPeripheralManager, Mac OS loads and starts the BLE framework, allowing us to intercat with it from a peripheral point of view.
+By instantiating CBPeripheralManager, Mac OS loads and starts the BLE framework, allowing us to interact with it as a peripheral.
 
 This is done in the constructor of [manager.m](https://github.com/ihassin/mac-ble-peripheral-objc-cli/blob/master/mac-ble-peripheral-objc-cli/manager.m):
 ```
@@ -77,7 +77,9 @@ The name 'ITAMAR-MAC-BOOK-PRO' is the one your Bluetooth scanner might display. 
 At this stage, your scanner should pick up the device (your mac) and service (itamar etc).
 Characteristics can be read or written only if the Central is connected to them. This is not _pairing_, but _connecting_.
 Once connected, your scanner can read the value exposed by querying the specific charactersitic's UUID, which, in our case, is
-```DDCA9B49-A6F5-462F-A89A-C2144083CA7F```.
+```
+DDCA9B49-A6F5-462F-A89A-C2144083CA7F
+```
 
 Reading, as well as writing, will trigger our callbacks to be called by CBPeripheralManager:
 
